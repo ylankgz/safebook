@@ -1,0 +1,84 @@
+
+/* Class = "UILabel"; text = "0.0 Mb"; ObjectID = "6ae-Ba-F3Z"; */
+"6ae-Ba-F3Z.text" = "0.0 Mb";
+
+/* Class = "UILabel"; text = "---"; ObjectID = "6eB-03-a7H"; */
+"6eB-03-a7H.text" = "---";
+
+/* Class = "UILabel"; text = "Our apps"; ObjectID = "8Sk-1Y-Ihs"; */
+"8Sk-1Y-Ihs.text" = "Our apps";
+
+/* Class = "UILabel"; text = "Comment"; ObjectID = "BHi-87-11v"; */
+"BHi-87-11v.text" = "Comment";
+
+/* Class = "UITableViewSection"; headerTitle = "Reading"; ObjectID = "Con-0r-WdT"; */
+"Con-0r-WdT.headerTitle" = "Reading";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "Do7-mc-eZ7"; */
+"Do7-mc-eZ7.title" = "Settings";
+
+/* Class = "UITabBarItem"; title = "News"; ObjectID = "EIF-YV-a6F"; */
+"EIF-YV-a6F.title" = "News";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "H3d-0d-SYy"; */
+"H3d-0d-SYy.title" = "Item";
+
+/* Class = "UILabel"; text = "Clear cache:"; ObjectID = "JMn-P1-tMi"; */
+"JMn-P1-tMi.text" = "Clear cache:";
+
+/* Class = "UINavigationItem"; title = "News"; ObjectID = "LfH-wW-hVK"; */
+"LfH-wW-hVK.title" = "News";
+
+/* Class = "UILabel"; text = "Clear cache on exit:"; ObjectID = "MoO-lT-xBb"; */
+"MoO-lT-xBb.text" = "Clear cache on exit:";
+
+/* Class = "UILabel"; text = "Version:"; ObjectID = "QXG-lw-WbW"; */
+"QXG-lw-WbW.text" = "Version:";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "TPQ-4e-hPr"; */
+"TPQ-4e-hPr.text" = "--";
+
+/* Class = "UILabel"; text = "Your name:"; ObjectID = "W2Z-RR-DFK"; */
+"W2Z-RR-DFK.text" = "Your name:";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "XdZ-Lc-sSd"; */
+"XdZ-Lc-sSd.title" = "Settings";
+
+/* Class = "UITextField"; placeholder = "Enter your name"; ObjectID = "XgQ-PI-uMg"; */
+"XgQ-PI-uMg.placeholder" = "Enter your name";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "ZFl-0d-oe9"; */
+"ZFl-0d-oe9.text" = "--";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "avn-g0-k8h"; */
+"avn-g0-k8h.text" = "--";
+
+/* Class = "UILabel"; text = "Support"; ObjectID = "gE4-xp-c3G"; */
+"gE4-xp-c3G.text" = "Support";
+
+/* Class = "UILabel"; text = "Source:"; ObjectID = "h0A-dC-dMF"; */
+"h0A-dC-dMF.text" = "Source:";
+
+/* Class = "UILabel"; text = "0.0"; ObjectID = "hMa-Hd-lyv"; */
+"hMa-Hd-lyv.text" = "0.0";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "heJ-cl-9AY"; */
+"heJ-cl-9AY.text" = "--";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "j7s-6Q-aaT"; */
+"j7s-6Q-aaT.normalTitle" = "Send";
+
+/* Class = "UITableViewSection"; headerTitle = "Other"; ObjectID = "jrc-tH-mqm"; */
+"jrc-tH-mqm.headerTitle" = "Other";
+
+/* Class = "UILabel"; text = "Your Email:"; ObjectID = "lcz-iy-n47"; */
+"lcz-iy-n47.text" = "Your Email:";
+
+/* Class = "UITableViewSection"; headerTitle = "Cache"; ObjectID = "oJf-E7-Vh6"; */
+"oJf-E7-Vh6.headerTitle" = "Cache";
+
+/* Class = "UILabel"; text = "keinex.com"; ObjectID = "uVm-ql-Vzf"; */
+"uVm-ql-Vzf.text" = "keinex.com";
+
+/* Class = "UITextField"; placeholder = "Enter your email"; ObjectID = "xsc-ID-agk"; */
+"xsc-ID-agk.placeholder" = "Enter your email";
