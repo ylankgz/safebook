@@ -32,6 +32,7 @@
 		F3A633BE1F52EE1E0042DA3E /* NewsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A633BD1F52EE1E0042DA3E /* NewsListTableViewCell.swift */; };
 		F3A633C01F52EF5A0042DA3E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F3A633BF1F52EF5A0042DA3E /* Podfile */; };
 		F3A633CC1F52F3A60042DA3E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3A633CE1F52F3A60042DA3E /* Localizable.strings */; };
+		F3F3D8501F6D85710015470A /* ClassValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F3D84F1F6D85710015470A /* ClassValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		F3A633BF1F52EF5A0042DA3E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F3A633CD1F52F3A60042DA3E /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F3A633CF1F52F3AF0042DA3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F3F3D84F1F6D85710015470A /* ClassValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +247,7 @@
 				F3A633B41F52ED530042DA3E /* ArticleCommentsVC.swift */,
 				F3A633B61F52ED790042DA3E /* ArticleCommentsTableViewCell.swift */,
 				F3A633B81F52EDA30042DA3E /* ArticleSendComment.swift */,
+				F3F3D84F1F6D85710015470A /* ClassValidator.swift */,
 			);
 			name = ArticleVC;
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 				F3A633B91F52EDA30042DA3E /* ArticleSendComment.swift in Sources */,
 				F3A633B51F52ED530042DA3E /* ArticleCommentsVC.swift in Sources */,
 				F31C95C01F5F286300EF0BC0 /* README.md in Sources */,
+				F3F3D8501F6D85710015470A /* ClassValidator.swift in Sources */,
 				F3A633B01F52ECDE0042DA3E /* SettingsVC.swift in Sources */,
 				F3A633B31F52ED1F0042DA3E /* ArticleVC.swift in Sources */,
 				F3A633BE1F52EE1E0042DA3E /* NewsListTableViewCell.swift in Sources */,

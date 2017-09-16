@@ -1,15 +1,18 @@
 PODS:
   - Alamofire (4.4.0)
+  - SelectableTextView (0.0.1)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Alamofire
+  - SelectableTextView
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  SelectableTextView: 27a18dad132e00a937d15bfadce063b5f335463a
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: efb63afb1887fce6e5a0896e41d64d16a1873d9f
+PODFILE CHECKSUM: 5c54f1061f4b206648db69cb89b7f99c3b32be6b
 
 COCOAPODS: 1.2.1

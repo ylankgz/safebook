@@ -28,7 +28,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="WJv-RB-dO9">
-                                <rect key="frame" x="167" y="306" width="80" height="78"/>
+                                <rect key="frame" x="167" y="291" width="80" height="78"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="4hq-3U-DdB"/>
                                     <constraint firstAttribute="height" constant="78" id="6uo-GK-U1a"/>
@@ -37,7 +37,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.29150390625" green="0.20366753472222221" blue="0.52685546875" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="bottom" secondItem="WJv-RB-dO9" secondAttribute="bottom" constant="40" id="XJn-Bg-6WE"/>
+                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="bottom" secondItem="WJv-RB-dO9" secondAttribute="bottom" constant="55" id="XJn-Bg-6WE"/>
                             <constraint firstItem="GJd-Yh-RWb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="kR9-93-tPE"/>
                             <constraint firstItem="WJv-RB-dO9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="wZj-mw-y77"/>
                             <constraint firstItem="GJd-Yh-RWb" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="71" id="yfi-av-BRc"/>
