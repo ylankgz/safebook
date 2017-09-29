@@ -12,6 +12,8 @@
 		F31C95BF1F5F286300EF0BC0 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = F31C95BC1F5F286300EF0BC0 /* LICENSE */; };
 		F31C95C01F5F286300EF0BC0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = F31C95BD1F5F286300EF0BC0 /* README.md */; };
 		F31C95C41F5F2A0C00EF0BC0 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F31C95C31F5F2A0B00EF0BC0 /* .gitignore */; };
+		F3708B0B1F7E10B1002B66A7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3708B0A1F7E0B27002B66A7 /* GoogleService-Info.plist */; };
+		F3708B0D1F7E1C0D002B66A7 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3708B0C1F7E1C0D002B66A7 /* SignupVC.swift */; };
 		F3A6336D1F52EA160042DA3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A6336C1F52EA160042DA3E /* AppDelegate.swift */; };
 		F3A633721F52EA160042DA3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3A633701F52EA160042DA3E /* Main.storyboard */; };
 		F3A633741F52EA160042DA3E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3A633731F52EA160042DA3E /* Images.xcassets */; };
@@ -32,7 +34,6 @@
 		F3A633BE1F52EE1E0042DA3E /* NewsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A633BD1F52EE1E0042DA3E /* NewsListTableViewCell.swift */; };
 		F3A633C01F52EF5A0042DA3E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F3A633BF1F52EF5A0042DA3E /* Podfile */; };
 		F3A633CC1F52F3A60042DA3E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3A633CE1F52F3A60042DA3E /* Localizable.strings */; };
-		F3F3D8501F6D85710015470A /* ClassValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F3D84F1F6D85710015470A /* ClassValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		F31C95BC1F5F286300EF0BC0 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		F31C95BD1F5F286300EF0BC0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F31C95C31F5F2A0B00EF0BC0 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		F3708B0A1F7E0B27002B66A7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F3708B0C1F7E1C0D002B66A7 /* SignupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
 		F373F8691F5341150032A8A9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		F3A633691F52EA160042DA3E /* Safebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Safebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3A6336C1F52EA160042DA3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,7 +91,6 @@
 		F3A633BF1F52EF5A0042DA3E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F3A633CD1F52F3A60042DA3E /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F3A633CF1F52F3AF0042DA3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
-		F3F3D84F1F6D85710015470A /* ClassValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,14 @@
 				B4B13EE46047427B2EBBB497 /* Pods_Safebook.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3708B0E1F7E444E002B66A7 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				F3708B0C1F7E1C0D002B66A7 /* SignupVC.swift */,
+			);
+			name = Signup;
 			sourceTree = "<group>";
 		};
 		F3A633601F52EA160042DA3E = {
@@ -228,6 +238,7 @@
 				F3A633BA1F52EDC80042DA3E /* NewsListVC */,
 				F3A633B11F52ED080042DA3E /* ArticleVC */,
 				F3A633AE1F52ECA10042DA3E /* SettingsVC */,
+				F3708B0E1F7E444E002B66A7 /* Signup */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -247,7 +258,6 @@
 				F3A633B41F52ED530042DA3E /* ArticleCommentsVC.swift */,
 				F3A633B61F52ED790042DA3E /* ArticleCommentsTableViewCell.swift */,
 				F3A633B81F52EDA30042DA3E /* ArticleSendComment.swift */,
-				F3F3D84F1F6D85710015470A /* ClassValidator.swift */,
 			);
 			name = ArticleVC;
 			sourceTree = "<group>";
@@ -265,6 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				F3A633781F52EA160042DA3E /* Info.plist */,
+				F3708B0A1F7E0B27002B66A7 /* GoogleService-Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -335,23 +346,26 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = SafebookApp;
 				TargetAttributes = {
 					F3A633681F52EA160042DA3E = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = FS3693577H;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					F3A6337C1F52EA160042DA3E = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = FS3693577H;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F3A633681F52EA160042DA3E;
 					};
 					F3A633871F52EA160042DA3E = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = FS3693577H;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F3A633681F52EA160042DA3E;
 					};
@@ -385,6 +399,7 @@
 			files = (
 				F31C95C41F5F2A0C00EF0BC0 /* .gitignore in Resources */,
 				F3A633771F52EA160042DA3E /* LaunchScreen.storyboard in Resources */,
+				F3708B0B1F7E10B1002B66A7 /* GoogleService-Info.plist in Resources */,
 				F3A633741F52EA160042DA3E /* Images.xcassets in Resources */,
 				F3A633CC1F52F3A60042DA3E /* Localizable.strings in Resources */,
 				F31C95BF1F5F286300EF0BC0 /* LICENSE in Resources */,
@@ -471,10 +486,10 @@
 				F3A633BC1F52EDE10042DA3E /* NewsListVC.swift in Sources */,
 				F3A633A81F52EC380042DA3E /* NetworkStatus.swift in Sources */,
 				F3A6336D1F52EA160042DA3E /* AppDelegate.swift in Sources */,
+				F3708B0D1F7E1C0D002B66A7 /* SignupVC.swift in Sources */,
 				F3A633B91F52EDA30042DA3E /* ArticleSendComment.swift in Sources */,
 				F3A633B51F52ED530042DA3E /* ArticleCommentsVC.swift in Sources */,
 				F31C95C01F5F286300EF0BC0 /* README.md in Sources */,
-				F3F3D8501F6D85710015470A /* ClassValidator.swift in Sources */,
 				F3A633B01F52ECDE0042DA3E /* SettingsVC.swift in Sources */,
 				F3A633B31F52ED1F0042DA3E /* ArticleVC.swift in Sources */,
 				F3A633BE1F52EE1E0042DA3E /* NewsListTableViewCell.swift in Sources */,
@@ -553,7 +568,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -561,7 +578,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -605,7 +626,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -613,7 +636,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -648,9 +675,10 @@
 				INFOPLIST_FILE = Safebook/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = SafebookApp.Safebook;
+				PRODUCT_BUNDLE_IDENTIFIER = kg.openline.Safebook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -663,9 +691,10 @@
 				INFOPLIST_FILE = Safebook/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = SafebookApp.Safebook;
+				PRODUCT_BUNDLE_IDENTIFIER = kg.openline.Safebook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -679,7 +708,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SafebookApp.SafebookTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Safebook.app/Safebook";
 			};
 			name = Debug;
@@ -694,7 +724,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SafebookApp.SafebookTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Safebook.app/Safebook";
 			};
 			name = Release;
@@ -708,7 +739,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SafebookApp.SafebookUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = Safebook;
 			};
 			name = Debug;
@@ -722,7 +754,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SafebookApp.SafebookUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = Safebook;
 			};
 			name = Release;

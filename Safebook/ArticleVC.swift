@@ -9,16 +9,13 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
-import SelectableTextView
+
 import SafariServices
 
 class ArticleVC: UIViewController, UIWebViewDelegate {
     
     lazy var json : JSON = JSON.null
 //    lazy var indexRow : Int = Int()
-    
-    @IBOutlet weak var textView: SelectableTextView!
-    @IBOutlet weak var textContentHeight: NSLayoutConstraint!
    
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var featuredImage: UIImageView!
@@ -30,20 +27,8 @@ class ArticleVC: UIViewController, UIWebViewDelegate {
         super.viewDidLoad()
         
         NotificationCenter.default.addObserver(self, selector: #selector(ArticleVC.changeOrientation), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
-        print(json)
         commentsButton.isHidden = true
-        textView.numberOfLines = 0
-        textView.registerValidator(validator: HashtagTextValidator()) { (text, validator) in
-        }
-        
-        textView.registerValidator(validator: UIClassValidator())
-        
-        let linkValidator = CustomLinkValidator(urlString: "https://drive.google.com/open?id=0BznZD0sO2wL3Zy1EQ0ZWX25OczA", replacementText: "Образец заявления")
-        textView.registerValidator(validator: linkValidator) { (text, validator) in
-            if let linkValidator = validator as? CustomLinkValidator {
-                self.openWebView(url: linkValidator.url)
-            }
-        }
+    
         
         if isiPad {
             featuredImageHeightConstant.constant = featuredImageHeightConstant.constant * 1.5
@@ -61,14 +46,13 @@ class ArticleVC: UIViewController, UIWebViewDelegate {
         
         if let content = json["text"].string {
             
-            textView.text = "https://drive.google.com/open?id=0BznZD0sO2wL3Zy1EQ0ZWX25OczA" + content.replacingOccurrences(of: "\\t", with: "\t").replacingOccurrences(of: "\\n", with: "\n").replacingOccurrences(of: "\\u{2022}", with: "\u{2022}")
+            return
         }
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(ArticleVC.ShareLink))
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        textContentHeight.constant = textView.textContentSize.height
 //        postContentWeb.layoutIfNeeded()
 //        textView.reload()
         
@@ -76,7 +60,7 @@ class ArticleVC: UIViewController, UIWebViewDelegate {
         self.scrollView.subviews.forEach { (subview) -> () in
             finalHeight += subview.frame.height
         }
-        self.scrollView.contentSize.height = finalHeight + textContentHeight.constant - 300
+        self.scrollView.contentSize.height = finalHeight
     }
     
     func webViewDidFinishLoad(_ webView: UIWebView) {
@@ -93,18 +77,17 @@ class ArticleVC: UIViewController, UIWebViewDelegate {
 //        showCommentsButton()
     }
     
-    func changeOrientation() {
+    @objc func changeOrientation() {
 //        webContentHeightConstant.constant = postContentWeb.scrollView.contentSize.height
 //        postContentWeb.layoutIfNeeded()
-        textView.reload()
-        textContentHeight.constant = textView.textContentSize.height
+    
         
         var finalHeight : CGFloat = 0
         self.scrollView.subviews.forEach { (subview) -> () in
             finalHeight += subview.frame.height
         }
         
-        self.scrollView.contentSize.height = finalHeight + textContentHeight.constant - 300
+        self.scrollView.contentSize.height = finalHeight
     }
     
 //    func showCommentsButton() {
@@ -131,7 +114,7 @@ class ArticleVC: UIViewController, UIWebViewDelegate {
         present(browser, animated: true, completion: nil)
     }
     
-    func ShareLink() {
+    @objc func ShareLink() {
         let textToShare = json["content"].string! + " "
         
         if let KeinexWebsite = URL(string: json["link"].string!) {

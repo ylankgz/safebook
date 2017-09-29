@@ -23,7 +23,6 @@ class ArticleCommentsVC: UITableViewController {
         tableView.isUserInteractionEnabled = false
         
         getComments()
-        print(json)
 //        let refreshControl = UIRefreshControl()
 //        refreshControl.addTarget(self, action: #selector(newComments), for: UIControlEvents.valueChanged)
 //        self.refreshControl = refreshControl

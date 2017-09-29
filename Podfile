@@ -5,5 +5,6 @@ use_frameworks!
 target 'Safebook' do
 pod 'SwiftyJSON'
 pod 'Alamofire'
-pod 'SelectableTextView'
+pod 'Firebase/Core'
+pod 'Firebase/Auth'
 end

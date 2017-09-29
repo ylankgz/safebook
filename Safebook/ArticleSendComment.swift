@@ -43,15 +43,15 @@ class ArticleSendComment: UIViewController, UITextViewDelegate, UITextFieldDeleg
         self.navigationItem.rightBarButtonItem = CloseKeyboardButton
     }
     
-    func keyboardWillAppear(_ notification: Notification){
+    @objc func keyboardWillAppear(_ notification: Notification){
         CloseKeyboardButton.tintColor = UIColor.white
     }
     
-    func keyboardWillDisappear(_ notification: Notification){
+    @objc func keyboardWillDisappear(_ notification: Notification){
         CloseKeyboardButton.tintColor = UIColor.clear
     }
     
-    func EndEditing() {
+    @objc func EndEditing() {
         self.view.endEditing(true)
     }
     

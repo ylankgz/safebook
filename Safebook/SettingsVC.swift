@@ -50,7 +50,7 @@ class SettingsViewController: UITableViewController, MFMailComposeViewController
         VersionNumber.text = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
     }
     
-    func clearCacheSwitchState() {
+    @objc func clearCacheSwitchState() {
         if ClearCacheSwitch.isOn {
             userDefaults.set("onClose", forKey: autoDelCache as String)
             userDefaults.synchronize()
@@ -149,7 +149,7 @@ class SettingsViewController: UITableViewController, MFMailComposeViewController
                 let mc = MFMailComposeViewController()
                 mc.mailComposeDelegate = self
                 mc.navigationBar.tintColor = UIColor.mainColor()
-                mc.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.mainColor()]
+                mc.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.mainColor()]
                 mc.setToRecipients(["kgopenline@gmail.com"])
                 mc.setSubject("Safebook app")
                 mc.addAttachmentData(deviceInfo, mimeType: "text/plain", fileName: "device_information.txt")
@@ -157,7 +157,7 @@ class SettingsViewController: UITableViewController, MFMailComposeViewController
             }
             
         } else if ((indexPath as NSIndexPath).section == 2 && (indexPath as NSIndexPath).row == 1) {
-            let openLink = URL(string : "https://itunes.apple.com/")
+            let openLink = URL(string : "https://www.facebook.com/munara.beknazarova")
             UIApplication.shared.openURL(openLink!)
         }
     }

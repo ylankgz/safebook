@@ -41,7 +41,7 @@ class LatestNewsTableViewController: UITableViewController {
         }
     }
     
-    func newNews() {
+    @objc func newNews() {
         if Network.isConnectedToNetwork() == true {
             getNews()
         } else {
@@ -201,9 +201,9 @@ extension String {
             return
         }
         
-        let attributedOptions: [String : Any] = [
-            NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType,
-            NSCharacterEncodingDocumentAttribute: String.Encoding.utf8.rawValue
+        let attributedOptions: [NSAttributedString.DocumentReadingOptionKey : Any] = [
+            NSAttributedString.DocumentReadingOptionKey(rawValue: NSAttributedString.DocumentAttributeKey.documentType.rawValue): NSAttributedString.DocumentType.html,
+            NSAttributedString.DocumentReadingOptionKey(rawValue: NSAttributedString.DocumentAttributeKey.characterEncoding.rawValue): String.Encoding.utf8.rawValue
         ]
         
         do {
