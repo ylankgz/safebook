@@ -12,6 +12,8 @@
 		F31C95BF1F5F286300EF0BC0 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = F31C95BC1F5F286300EF0BC0 /* LICENSE */; };
 		F31C95C01F5F286300EF0BC0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = F31C95BD1F5F286300EF0BC0 /* README.md */; };
 		F31C95C41F5F2A0C00EF0BC0 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F31C95C31F5F2A0B00EF0BC0 /* .gitignore */; };
+		F33163991F80EE4A008795B5 /* SpecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33163981F80EE4A008795B5 /* SpecViewController.swift */; };
+		F331639B1F8143D3008795B5 /* AcceptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F331639A1F8143D3008795B5 /* AcceptViewController.swift */; };
 		F3708B0B1F7E10B1002B66A7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3708B0A1F7E0B27002B66A7 /* GoogleService-Info.plist */; };
 		F3708B0D1F7E1C0D002B66A7 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3708B0C1F7E1C0D002B66A7 /* SignupVC.swift */; };
 		F3A6336D1F52EA160042DA3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A6336C1F52EA160042DA3E /* AppDelegate.swift */; };
@@ -34,6 +36,7 @@
 		F3A633BE1F52EE1E0042DA3E /* NewsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A633BD1F52EE1E0042DA3E /* NewsListTableViewCell.swift */; };
 		F3A633C01F52EF5A0042DA3E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F3A633BF1F52EF5A0042DA3E /* Podfile */; };
 		F3A633CC1F52F3A60042DA3E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3A633CE1F52F3A60042DA3E /* Localizable.strings */; };
+		F3CDF3431F7FF97E00432800 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CDF3421F7FF97E00432800 /* UserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,8 @@
 		F31C95BC1F5F286300EF0BC0 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		F31C95BD1F5F286300EF0BC0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F31C95C31F5F2A0B00EF0BC0 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		F33163981F80EE4A008795B5 /* SpecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecViewController.swift; sourceTree = "<group>"; };
+		F331639A1F8143D3008795B5 /* AcceptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptViewController.swift; sourceTree = "<group>"; };
 		F3708B0A1F7E0B27002B66A7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F3708B0C1F7E1C0D002B66A7 /* SignupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
 		F373F8691F5341150032A8A9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
@@ -91,6 +96,7 @@
 		F3A633BF1F52EF5A0042DA3E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F3A633CD1F52F3A60042DA3E /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F3A633CF1F52F3AF0042DA3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F3CDF3421F7FF97E00432800 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +140,16 @@
 				B4B13EE46047427B2EBBB497 /* Pods_Safebook.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F331639D1F81458A008795B5 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				F3CDF3421F7FF97E00432800 /* UserViewController.swift */,
+				F33163981F80EE4A008795B5 /* SpecViewController.swift */,
+				F331639A1F8143D3008795B5 /* AcceptViewController.swift */,
+			);
+			name = Map;
 			sourceTree = "<group>";
 		};
 		F3708B0E1F7E444E002B66A7 /* Signup */ = {
@@ -235,23 +251,24 @@
 			children = (
 				F3A633751F52EA160042DA3E /* LaunchScreen.storyboard */,
 				F3A633701F52EA160042DA3E /* Main.storyboard */,
-				F3A633BA1F52EDC80042DA3E /* NewsListVC */,
-				F3A633B11F52ED080042DA3E /* ArticleVC */,
-				F3A633AE1F52ECA10042DA3E /* SettingsVC */,
+				F3A633BA1F52EDC80042DA3E /* Cases */,
+				F3A633B11F52ED080042DA3E /* Article */,
+				F3A633AE1F52ECA10042DA3E /* Settings */,
 				F3708B0E1F7E444E002B66A7 /* Signup */,
+				F331639D1F81458A008795B5 /* Map */,
 			);
 			name = UI;
 			sourceTree = "<group>";
 		};
-		F3A633AE1F52ECA10042DA3E /* SettingsVC */ = {
+		F3A633AE1F52ECA10042DA3E /* Settings */ = {
 			isa = PBXGroup;
 			children = (
 				F3A633AF1F52ECDE0042DA3E /* SettingsVC.swift */,
 			);
-			name = SettingsVC;
+			name = Settings;
 			sourceTree = "<group>";
 		};
-		F3A633B11F52ED080042DA3E /* ArticleVC */ = {
+		F3A633B11F52ED080042DA3E /* Article */ = {
 			isa = PBXGroup;
 			children = (
 				F3A633B21F52ED1F0042DA3E /* ArticleVC.swift */,
@@ -259,16 +276,16 @@
 				F3A633B61F52ED790042DA3E /* ArticleCommentsTableViewCell.swift */,
 				F3A633B81F52EDA30042DA3E /* ArticleSendComment.swift */,
 			);
-			name = ArticleVC;
+			name = Article;
 			sourceTree = "<group>";
 		};
-		F3A633BA1F52EDC80042DA3E /* NewsListVC */ = {
+		F3A633BA1F52EDC80042DA3E /* Cases */ = {
 			isa = PBXGroup;
 			children = (
 				F3A633BB1F52EDE10042DA3E /* NewsListVC.swift */,
 				F3A633BD1F52EE1E0042DA3E /* NewsListTableViewCell.swift */,
 			);
-			name = NewsListVC;
+			name = Cases;
 			sourceTree = "<group>";
 		};
 		F3A633C11F52F0010042DA3E /* Supporting Files */ = {
@@ -479,8 +496,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3A633B71F52ED790042DA3E /* ArticleCommentsTableViewCell.swift in Sources */,
+				F3CDF3431F7FF97E00432800 /* UserViewController.swift in Sources */,
+				F331639B1F8143D3008795B5 /* AcceptViewController.swift in Sources */,
 				F3A633AC1F52EC7E0042DA3E /* ImageLoader.swift in Sources */,
 				F3A633AA1F52EC5B0042DA3E /* LocalizeExtension.swift in Sources */,
+				F33163991F80EE4A008795B5 /* SpecViewController.swift in Sources */,
 				F3A633A61F52EC000042DA3E /* Defaults.swift in Sources */,
 				F3A633A41F52EBCF0042DA3E /* Colors.swift in Sources */,
 				F3A633BC1F52EDE10042DA3E /* NewsListVC.swift in Sources */,

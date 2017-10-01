@@ -46,7 +46,19 @@ class SignupVC: UIViewController {
                     if error != nil {
                         self.displayAlert(title: "Error", message: error!.localizedDescription)
                     } else {
-                        print("Signed up")
+                        if self.userSwitch.isOn {
+                            // Specialist
+                            let req = FIRAuth.auth()?.currentUser?.profileChangeRequest()
+                            req?.displayName = "Specialist"
+                            req?.commitChanges(completion: nil)
+                            self.performSegue(withIdentifier: "specSegue", sender: nil)
+                        }else {
+                            // User
+                            let req = FIRAuth.auth()?.currentUser?.profileChangeRequest()
+                            req?.displayName = "User"
+                            req?.commitChanges(completion: nil)
+                            self.performSegue(withIdentifier: "userSegue", sender: nil)
+                        }
                     }
                 })
             } else {
@@ -54,7 +66,13 @@ class SignupVC: UIViewController {
                     if error != nil {
                         self.displayAlert(title: "Error", message: error!.localizedDescription)
                     } else {
-                        print("Logged in")
+                        if user?.displayName == "Specialist" {
+                            // Specialist
+                            self.performSegue(withIdentifier: "specSegue", sender: nil)
+                        } else {
+                            // User
+                            self.performSegue(withIdentifier: "userSegue", sender: nil)
+                        }
                     }
                 })
             }
