@@ -26,8 +26,15 @@ class SpecViewController: UITableViewController, CLLocationManagerDelegate {
         locationManager.startUpdatingLocation()
         
         FIRDatabase.database().reference().child("SpecRequests").observeSingleEvent(of: .childAdded) { (snapshot) in
-            self.specRequests.append(snapshot)
-            self.tableView.reloadData()
+            
+            if let specRequestDict = snapshot.value as? [String: Any] {
+                if let _ = specRequestDict["specLat"] as? Double {
+                } else {
+                    self.specRequests.append(snapshot)
+                    self.tableView.reloadData()
+                }
+            }
+            
         }
         if #available(iOS 10.0, *) {
             Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { (timer) in

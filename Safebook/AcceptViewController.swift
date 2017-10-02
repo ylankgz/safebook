@@ -19,7 +19,7 @@ class AcceptViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let region = MKCoordinateRegion(center: requestLocation, span: MKCoordinateSpanMake(0.01, 0.01))
+        let region = MKCoordinateRegion(center: requestLocation, span: MKCoordinateSpanMake(0.5, 0.5))
         map.setRegion(region, animated: false)
         let annotation = MKPointAnnotation()
         annotation.coordinate = requestLocation
