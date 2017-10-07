@@ -97,6 +97,7 @@
 		F3A633CD1F52F3A60042DA3E /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F3A633CF1F52F3AF0042DA3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F3CDF3421F7FF97E00432800 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		F3E48C341F86E9160053D606 /* Safebook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Safebook.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +191,7 @@
 		F3A6336B1F52EA160042DA3E /* Safebook */ = {
 			isa = PBXGroup;
 			children = (
+				F3E48C341F86E9160053D606 /* Safebook.entitlements */,
 				F3A633C11F52F0010042DA3E /* Supporting Files */,
 				F3A633AD1F52EC920042DA3E /* UI */,
 				F3A633A21F52EBAE0042DA3E /* Helpers */,
@@ -371,6 +373,17 @@
 						DevelopmentTeam = FS3693577H;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 					F3A6337C1F52EA160042DA3E = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -693,7 +706,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FS3693577H;
 				INFOPLIST_FILE = Safebook/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kg.openline.Safebook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -709,7 +722,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FS3693577H;
 				INFOPLIST_FILE = Safebook/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kg.openline.Safebook;
 				PRODUCT_NAME = "$(TARGET_NAME)";

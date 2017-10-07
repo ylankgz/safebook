@@ -25,8 +25,7 @@ class SpecViewController: UITableViewController, CLLocationManagerDelegate {
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
         
-        FIRDatabase.database().reference().child("SpecRequests").observeSingleEvent(of: .childAdded) { (snapshot) in
-            
+        FIRDatabase.database().reference().child("SpecRequests").observe(.childAdded) { (snapshot) in
             if let specRequestDict = snapshot.value as? [String: Any] {
                 if let _ = specRequestDict["specLat"] as? Double {
                 } else {
@@ -34,18 +33,19 @@ class SpecViewController: UITableViewController, CLLocationManagerDelegate {
                     self.tableView.reloadData()
                 }
             }
-            
         }
-        if #available(iOS 10.0, *) {
-            Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { (timer) in
-                self.tableView.reloadData()
-            }
-        } else {
-            Timer.scheduledTimer(timeInterval: 5,
-                                 target: self,
-                                 selector: #selector(self.tableView.reloadData),
-                                 userInfo: nil,
-                                 repeats: true)
+//        FIRDatabase.database().reference().child("SpecRequests").observeSingleEvent(of: .childAdded) { (snapshot) in
+//            if let specRequestDict = snapshot.value as? [String: Any] {
+//                if let _ = specRequestDict["specLat"] as? Double {
+//                } else {
+//                    self.specRequests.append(snapshot)
+//                    self.tableView.reloadData()
+//                }
+//            }
+//        }
+        
+        Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { (timer) in
+            self.tableView.reloadData()
         }
     }
     
@@ -71,14 +71,14 @@ class SpecViewController: UITableViewController, CLLocationManagerDelegate {
         
         let snapshot = specRequests[indexPath.row]
         if let specRequestDict = snapshot.value as? [String: Any] {
-            if let email = specRequestDict["email"] as? String {
+            if let name = specRequestDict["name"] as? String {
                 if let lat = specRequestDict["lat"] as? Double {
                     if let lon = specRequestDict["lon"] as? Double {
                         let specCLLocation = CLLocation(latitude: specLocation.latitude, longitude: specLocation.longitude)
                         let userCLLocation = CLLocation(latitude: lat, longitude: lon)
                         let distance = specCLLocation.distance(from: userCLLocation) / 1000
                         let roundedDistance = round(distance * 100) / 100
-                        cell.textLabel?.text = "\(email) - \(roundedDistance)km away"
+                        cell.textLabel?.text = "\(name) - \(roundedDistance)km away"
                     }
                 }
             }
