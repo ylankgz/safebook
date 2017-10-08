@@ -31,7 +31,6 @@
 		F3A633B31F52ED1F0042DA3E /* ArticleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A633B21F52ED1F0042DA3E /* ArticleVC.swift */; };
 		F3A633B51F52ED530042DA3E /* ArticleCommentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A633B41F52ED530042DA3E /* ArticleCommentsVC.swift */; };
 		F3A633B71F52ED790042DA3E /* ArticleCommentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A633B61F52ED790042DA3E /* ArticleCommentsTableViewCell.swift */; };
-		F3A633B91F52EDA30042DA3E /* ArticleSendComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A633B81F52EDA30042DA3E /* ArticleSendComment.swift */; };
 		F3A633BC1F52EDE10042DA3E /* NewsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A633BB1F52EDE10042DA3E /* NewsListVC.swift */; };
 		F3A633BE1F52EE1E0042DA3E /* NewsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A633BD1F52EE1E0042DA3E /* NewsListTableViewCell.swift */; };
 		F3A633C01F52EF5A0042DA3E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F3A633BF1F52EF5A0042DA3E /* Podfile */; };
@@ -90,7 +89,6 @@
 		F3A633B21F52ED1F0042DA3E /* ArticleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleVC.swift; sourceTree = "<group>"; };
 		F3A633B41F52ED530042DA3E /* ArticleCommentsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleCommentsVC.swift; sourceTree = "<group>"; };
 		F3A633B61F52ED790042DA3E /* ArticleCommentsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleCommentsTableViewCell.swift; sourceTree = "<group>"; };
-		F3A633B81F52EDA30042DA3E /* ArticleSendComment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleSendComment.swift; sourceTree = "<group>"; };
 		F3A633BB1F52EDE10042DA3E /* NewsListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsListVC.swift; sourceTree = "<group>"; };
 		F3A633BD1F52EE1E0042DA3E /* NewsListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsListTableViewCell.swift; sourceTree = "<group>"; };
 		F3A633BF1F52EF5A0042DA3E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -276,7 +274,6 @@
 				F3A633B21F52ED1F0042DA3E /* ArticleVC.swift */,
 				F3A633B41F52ED530042DA3E /* ArticleCommentsVC.swift */,
 				F3A633B61F52ED790042DA3E /* ArticleCommentsTableViewCell.swift */,
-				F3A633B81F52EDA30042DA3E /* ArticleSendComment.swift */,
 			);
 			name = Article;
 			sourceTree = "<group>";
@@ -520,7 +517,6 @@
 				F3A633A81F52EC380042DA3E /* NetworkStatus.swift in Sources */,
 				F3A6336D1F52EA160042DA3E /* AppDelegate.swift in Sources */,
 				F3708B0D1F7E1C0D002B66A7 /* SignupVC.swift in Sources */,
-				F3A633B91F52EDA30042DA3E /* ArticleSendComment.swift in Sources */,
 				F3A633B51F52ED530042DA3E /* ArticleCommentsVC.swift in Sources */,
 				F31C95C01F5F286300EF0BC0 /* README.md in Sources */,
 				F3A633B01F52ECDE0042DA3E /* SettingsVC.swift in Sources */,

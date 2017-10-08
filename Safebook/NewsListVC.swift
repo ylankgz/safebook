@@ -114,6 +114,9 @@ class LatestNewsTableViewController: UITableViewController {
         }
     }
     
+    @IBAction func doneTapped(_ sender: Any) {
+        navigationController?.dismiss(animated: true, completion: nil)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
