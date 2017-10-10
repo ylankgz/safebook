@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BB4566B848210DC4BC2A38ED /* Pods_Safebook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B13EE46047427B2EBBB497 /* Pods_Safebook.framework */; };
+		F306C7401F8CB4C400C4AFF9 /* DocsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F306C73F1F8CB4C400C4AFF9 /* DocsViewController.swift */; };
 		F31C95BE1F5F286300EF0BC0 /* app-store-badge.png in Resources */ = {isa = PBXBuildFile; fileRef = F31C95BB1F5F286300EF0BC0 /* app-store-badge.png */; };
 		F31C95BF1F5F286300EF0BC0 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = F31C95BC1F5F286300EF0BC0 /* LICENSE */; };
 		F31C95C01F5F286300EF0BC0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = F31C95BD1F5F286300EF0BC0 /* README.md */; };
@@ -59,6 +60,7 @@
 		2FCD9B2C8783288EA1333667 /* Pods-Safebook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Safebook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Safebook/Pods-Safebook.debug.xcconfig"; sourceTree = "<group>"; };
 		3527FB5363936CD85CA4AED6 /* Pods-Safebook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Safebook.release.xcconfig"; path = "Pods/Target Support Files/Pods-Safebook/Pods-Safebook.release.xcconfig"; sourceTree = "<group>"; };
 		B4B13EE46047427B2EBBB497 /* Pods_Safebook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Safebook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F306C73F1F8CB4C400C4AFF9 /* DocsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocsViewController.swift; sourceTree = "<group>"; };
 		F31C95BB1F5F286300EF0BC0 /* app-store-badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-store-badge.png"; sourceTree = "<group>"; };
 		F31C95BC1F5F286300EF0BC0 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		F31C95BD1F5F286300EF0BC0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -139,6 +141,14 @@
 				B4B13EE46047427B2EBBB497 /* Pods_Safebook.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F306C7411F8CB4D100C4AFF9 /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				F306C73F1F8CB4C400C4AFF9 /* DocsViewController.swift */,
+			);
+			name = Docs;
 			sourceTree = "<group>";
 		};
 		F331639D1F81458A008795B5 /* Map */ = {
@@ -256,6 +266,7 @@
 				F3A633AE1F52ECA10042DA3E /* Settings */,
 				F3708B0E1F7E444E002B66A7 /* Signup */,
 				F331639D1F81458A008795B5 /* Map */,
+				F306C7411F8CB4D100C4AFF9 /* Docs */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -508,6 +519,7 @@
 				F3A633B71F52ED790042DA3E /* ArticleCommentsTableViewCell.swift in Sources */,
 				F3CDF3431F7FF97E00432800 /* UserViewController.swift in Sources */,
 				F331639B1F8143D3008795B5 /* AcceptViewController.swift in Sources */,
+				F306C7401F8CB4C400C4AFF9 /* DocsViewController.swift in Sources */,
 				F3A633AC1F52EC7E0042DA3E /* ImageLoader.swift in Sources */,
 				F3A633AA1F52EC5B0042DA3E /* LocalizeExtension.swift in Sources */,
 				F33163991F80EE4A008795B5 /* SpecViewController.swift in Sources */,
