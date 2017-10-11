@@ -8,5 +8,4 @@ pod 'Alamofire'
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
-pod 'Mapbox-iOS-SDK', '~> 3.6'
 end

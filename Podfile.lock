@@ -34,7 +34,6 @@ PODS:
     - GoogleToolboxForMac/NSString+URLArguments (= 2.1.1)
   - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
   - GTMSessionFetcher/Core (1.1.9)
-  - Mapbox-iOS-SDK (3.6.4)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
@@ -42,7 +41,6 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
-  - Mapbox-iOS-SDK (~> 3.6)
   - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -55,9 +53,8 @@ SPEC CHECKSUMS:
   FirebaseInstanceID: b9eedd6846fb5e1f0f7279e1deaa7a7e4cf8392e
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 5c046c76a1f859bc9c187e918f18e4fc7bb57b5e
-  Mapbox-iOS-SDK: 47847dd44285477e0dfffd0130f65c8a52823ada
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 0e2688f17343799b8c48a969ac1346baca1937a9
+PODFILE CHECKSUM: 930319102b8b0b7b2e6dd9ed50efebe9afb56a9f
 
 COCOAPODS: 1.2.1
