@@ -1,11 +1,24 @@
-/*
- Localizable.strings
- Keinex
- 
- Created by Андрей on 07.08.16.
- Copyright © 2016 Keinex. All rights reserved.
- */
 
+"Welcome"                                               = "Привет!";
+"Specialist"                                            = "Специалист";
+"Your name"                                             = "Ваше имя";
+"Your email"                                            = "Е-мэйл";
+"Password"                                              = "Пароль";
+"Sign Up"                                               = "Регистрация";
+"Login"                                                 = "Войти";
+"or"                                                    = "или";
+"switch to login"                                       = "залогиниться";
+"switch to signup"                                      = "регистрация";
+"Share location"                                        = "Показать меня всем";
+"Cancel share"                                          = "Спрятать меня";
+"You want to drop meeting?"                             = "Вы хотите закончить встречу?";
+"Warning"                                               = "Внимание";
+"Accept"                                                = "Нанести визит";
+"Missing information"                                   = "Недостаточно информации";
+"You must provide name, email and password!"            = "Вы должны заполнить все поля!";
+"You must provide both email and password!"             = "Вы должны ввести е-мэйл и пароль!";
+"Error"                                                 = "Ошибка";
+"Drop"                                                  = "Сбросить";
 "Loading..."                                            = "Загрузка...";
 "Cases"                                                 = "Кейсы";
 "Settings"                                              = "Настройки";

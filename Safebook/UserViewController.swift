@@ -41,7 +41,7 @@ class UserViewController: UIViewController, MGLMapViewDelegate, CLLocationManage
         if let email = FIRAuth.auth()?.currentUser?.email {
             FIRDatabase.database().reference().child("SpecRequests").queryOrdered(byChild: "email").queryEqual(toValue: email).observe(.childAdded, with: { (snapshot) in
                 self.specHasBeenCalled = true
-                self.callButton.setTitle("Cancel share", for: .normal)
+                self.callButton.setTitle("Cancel share".localize, for: .normal)
                 self.callButton.setBackgroundImage(#imageLiteral(resourceName: "Cancel"), for: .normal)
                 FIRDatabase.database().reference().child("SpecRequests").removeAllObservers()
                 
@@ -127,7 +127,7 @@ class UserViewController: UIViewController, MGLMapViewDelegate, CLLocationManage
             if !specOnTheWay {
                 if specHasBeenCalled {
                     specHasBeenCalled = false
-                    callButton.setTitle("Share location", for: .normal)
+                    callButton.setTitle("Share location".localize, for: .normal)
                     callButton.setBackgroundImage(#imageLiteral(resourceName: "Share"), for: .normal)
                     FIRDatabase.database().reference().child("SpecRequests").queryOrdered(byChild: "email").queryEqual(toValue: email).observe(.childAdded, with: { (snapshot) in
                         snapshot.ref.removeValue()
@@ -138,11 +138,11 @@ class UserViewController: UIViewController, MGLMapViewDelegate, CLLocationManage
                     FIRDatabase.database().reference().child("SpecRequests").childByAutoId().setValue(specRequestDict)
                     
                     specHasBeenCalled = true
-                    callButton.setTitle("Cancel share", for: .normal)
+                    callButton.setTitle("Cancel share".localize, for: .normal)
                     callButton.setBackgroundImage(#imageLiteral(resourceName: "Cancel"), for: .normal)
                 }
             } else {
-                self.displayAlert(title: "Warning", message: "You want to drop meeting?", email: email)
+                self.displayAlert(title: "Warning".localize, message: "You want to drop meeting?".localize, email: email)
             }
         }
     }
@@ -162,12 +162,12 @@ class UserViewController: UIViewController, MGLMapViewDelegate, CLLocationManage
     
     func displayAlert(title: String, message: String, email: String) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
-        let destroyAction = UIAlertAction(title: "Drop", style: .destructive) { (result : UIAlertAction) -> Void in
+        let cancelAction = UIAlertAction(title: "Cancel".localize, style: .cancel)
+        let destroyAction = UIAlertAction(title: "Drop".localize, style: .destructive) { (result : UIAlertAction) -> Void in
 //            FIRDatabase.database().reference().child("SpecRequests\(self.key)").removeValue()
             // Drop meeting
             self.specHasBeenCalled = false
-            self.callButton.setTitle("Share location", for: .normal)
+            self.callButton.setTitle("Share location".localize, for: .normal)
             self.callButton.setBackgroundImage(#imageLiteral(resourceName: "Share"), for: .normal)
             FIRDatabase.database().reference().child("SpecRequests").queryOrdered(byChild: "email").queryEqual(toValue: email).observe(.value, with: { (snapshot) in
                 snapshot.ref.removeValue()

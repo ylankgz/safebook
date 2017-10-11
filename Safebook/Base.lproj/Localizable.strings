@@ -1,11 +1,24 @@
-/*
- Localizable.strings
- Keinex
- 
- Created by Андрей on 07.08.16.
- Copyright © 2016 Keinex. All rights reserved.
- */
 
+"Welcome"                                               = "Welcome";
+"Specialist"                                            = "Specialist";
+"Your name"                                             = "Your name";
+"Your email"                                            = "Your email";
+"Password"                                              = "Password";
+"Sign Up"                                               = "Sign Up";
+"Login"                                                 = "Login";
+"or"                                                    = "or";
+"switch to login"                                       = "switch to login";
+"switch to signup"                                      = "switch to signup";
+"Share location"                                        = "Share location";
+"Cancel share"                                          = "Cancel share";
+"You want to drop meeting?"                             = "You want to drop meeting?";
+"Warning"                                               = "Warning";
+"Accept"                                                = "Accept";
+"Missing information"                                   = "Missing information";
+"You must provide name, email and password!"            = "You must provide name, email and password!";
+"You must provide both email and password!"             = "You must provide both email and password!";
+"Error"                                                 = "Error";
+"Drop"                                                  = "Drop";
 "Loading..."                                            = "Loading...";
 "Cases"                                                 = "Cases";
 "Settings"                                              = "Settings";

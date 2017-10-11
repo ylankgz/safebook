@@ -157,8 +157,8 @@ class SettingsViewController: UITableViewController, MFMailComposeViewController
             }
             
         } else if ((indexPath as NSIndexPath).section == 2 && (indexPath as NSIndexPath).row == 1) {
-            let openLink = URL(string : "https://www.facebook.com/munara.beknazarova")
-            UIApplication.shared.openURL(openLink!)
+            let openLink = URL(string : "https://www.facebook.com/openlinekg/")
+            UIApplication.shared.open(openLink!, options: [:], completionHandler: nil)
         }
     }
     

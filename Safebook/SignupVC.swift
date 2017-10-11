@@ -22,15 +22,15 @@ class SignupVC: UIViewController {
     
     @IBAction func loginTapped(_ sender: Any) {
         if signupMode {
-            signupButton.setTitle("Login", for: .normal)
-            loginButton.setTitle("switch to signup", for: .normal)
+            signupButton.setTitle("Login".localize, for: .normal)
+            loginButton.setTitle("switch to signup".localize, for: .normal)
             specLabel.isHidden = true
             nameTextField.isHidden = true
             userSwitch.isHidden = true
             signupMode = false
         } else {
-            signupButton.setTitle("Sign up", for: .normal)
-            loginButton.setTitle("switch to login", for: .normal)
+            signupButton.setTitle("Sign Up".localize, for: .normal)
+            loginButton.setTitle("switch to login".localize, for: .normal)
             specLabel.isHidden = false
             nameTextField.isHidden = false
             userSwitch.isHidden = false
@@ -39,12 +39,16 @@ class SignupVC: UIViewController {
     }
     @IBAction func signupTapped(_ sender: Any) {
         if emailTextField.text! == "" || pwTextField.text! == "" {
-            displayAlert(title: "Missing information", message: "You must provide both email and password!")
+            if signupMode && nameTextField.text! == "" {
+                displayAlert(title: "Missing information".localize, message: "You must provide name, email and password!".localize)
+            } else {
+                displayAlert(title: "Missing information".localize, message: "You must provide both email and password!".localize)
+            }
         } else {
             if signupMode {
                 FIRAuth.auth()?.createUser(withEmail: emailTextField.text!, password: pwTextField.text!, completion: { (user, error) in
                     if error != nil {
-                        self.displayAlert(title: "Error", message: error!.localizedDescription)
+                        self.displayAlert(title: "Error".localize, message: error!.localizedDescription)
                     } else {
                         if !self.userSwitch.isOn {
                             // Specialist
@@ -64,7 +68,7 @@ class SignupVC: UIViewController {
             } else {
                 FIRAuth.auth()?.signIn(withEmail: emailTextField.text!, password: pwTextField.text!, completion: { (user, error) in
                     if error != nil {
-                        self.displayAlert(title: "Error", message: error!.localizedDescription)
+                        self.displayAlert(title: "Error".localize, message: error!.localizedDescription)
                     } else {
                         if (user?.displayName?.starts(with: "Victim"))! {
                             // Victim

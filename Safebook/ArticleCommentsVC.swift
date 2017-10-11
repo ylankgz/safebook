@@ -1,10 +1,3 @@
-//
-//  ArticleCommentsVC.swift
-//  Keinex
-//
-//  Created by Андрей on 18.08.16.
-//  Copyright © 2016 Keinex. All rights reserved.
-//
 
 import UIKit
 import Alamofire

@@ -1,10 +1,3 @@
-//
-//  LatestNewsTableViewCell.swift
-//  Keinex
-//
-//  Created by Андрей on 7/15/15.
-//  Copyright (c) 2016 Keinex. All rights reserved.
-//
 
 import UIKit
 

@@ -379,7 +379,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="user@test.com" borderStyle="roundedRect" placeholder="you@gmail.com" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OPX-4u-tH9">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OPX-4u-tH9">
                                 <rect key="frame" x="36" y="143" width="303" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="YH4-Lk-2D0"/>
@@ -388,7 +388,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="root1234" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Fe-cv-xzX">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Fe-cv-xzX">
                                 <rect key="frame" x="36" y="203" width="303" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="0ES-xJ-eAQ"/>
@@ -422,8 +422,8 @@
                                     <action selector="loginTapped:" destination="iGW-Jb-a0y" eventType="touchUpInside" id="0f8-IL-aJH"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqi-Bh-rtZ">
-                                <rect key="frame" x="141" y="40" width="93" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqi-Bh-rtZ">
+                                <rect key="frame" x="148" y="40" width="79" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -783,7 +783,7 @@
         <image name="Signup" width="140" height="38"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="GfM-MS-x3B"/>
+        <segue reference="JkW-EA-yTw"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
