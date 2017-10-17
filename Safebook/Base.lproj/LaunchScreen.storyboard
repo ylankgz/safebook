@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,29 +18,24 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="zEN-fx-ibW" userLabel="Background">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="zEN-fx-ibW" userLabel="Background">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="WJv-RB-dO9">
-                                <rect key="frame" x="165.66666666666666" y="101" width="83" height="77"/>
+                                <rect key="frame" x="125" y="95" width="125" height="116"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Safebook" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="GJd-Yh-RWb">
-                                <rect key="frame" x="137.66666666666669" y="212" width="139.00000000000006" height="43"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="36"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.29150390625" green="0.20366753472222221" blue="0.52685546875" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="WJv-RB-dO9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="0ZI-Ft-hp7"/>
-                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="top" secondItem="WJv-RB-dO9" secondAttribute="bottom" constant="34" id="eSf-oX-C7z"/>
-                            <constraint firstItem="WJv-RB-dO9" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="81" id="gL2-7D-4j5"/>
-                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="hNr-Ss-enl"/>
+                            <constraint firstAttribute="trailing" secondItem="zEN-fx-ibW" secondAttribute="trailing" constant="-39" id="7ep-FB-wUS"/>
+                            <constraint firstItem="zEN-fx-ibW" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="P4L-Fr-wyl"/>
+                            <constraint firstItem="zEN-fx-ibW" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Y6R-Eu-Ls9"/>
+                            <constraint firstAttribute="bottom" secondItem="zEN-fx-ibW" secondAttribute="bottom" constant="-69" id="dHp-cC-fwP"/>
+                            <constraint firstItem="WJv-RB-dO9" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="75" id="gL2-7D-4j5"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -51,6 +46,6 @@
     </scenes>
     <resources>
         <image name="Splash" width="375" height="667"/>
-        <image name="launch" width="83" height="77"/>
+        <image name="launch" width="125" height="116"/>
     </resources>
 </document>

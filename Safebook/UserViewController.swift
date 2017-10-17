@@ -24,6 +24,7 @@ class UserViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        map.showsUserLocation = true
 
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -89,6 +90,7 @@ class UserViewController: UIViewController, CLLocationManagerDelegate {
         userAnno.coordinate = userLocation
         userAnno.title = "You are here!"
         map.addAnnotations([userAnno, specAnno])
+        print(userLocation, specLocation)
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -97,16 +99,16 @@ class UserViewController: UIViewController, CLLocationManagerDelegate {
             userLocation = center
 
             if specHasBeenCalled {
-                self.checkSpecLocation()
+                self.displayUserAndSpec()
             } else {
                 let region = MKCoordinateRegion(center:center, span:MKCoordinateSpan(latitudeDelta:0.01, longitudeDelta:0.01))
                 map.setRegion(region, animated: true)
                 
                 
-                let annotation = MKPointAnnotation()
-                annotation.coordinate = center
-                annotation.title = "You are here"
-                map.addAnnotation(annotation)
+//                let annotation = MKPointAnnotation()
+//                annotation.coordinate = center
+//                annotation.title = "You are here"
+//                map.addAnnotation(annotation)
 
                 //print("annotation added \(coord.latitude) \(coord.longitude)")
             }
@@ -150,6 +152,7 @@ class UserViewController: UIViewController, CLLocationManagerDelegate {
 //            FIRDatabase.database().reference().child("SpecRequests\(self.key)").removeValue()
             // Drop meeting
             self.specHasBeenCalled = false
+            self.specOnTheWay = false
             self.callButton.setTitle("Share location".localize, for: .normal)
             self.callButton.setBackgroundImage(#imageLiteral(resourceName: "Share"), for: .normal)
             FIRDatabase.database().reference().child("SpecRequests").queryOrdered(byChild: "email").queryEqual(toValue: email).observe(.value, with: { (snapshot) in

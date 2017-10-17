@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import FirebaseAuth
 import FirebaseDatabase
 import MapKit
 
@@ -24,16 +23,7 @@ class SpecViewController: UITableViewController, CLLocationManagerDelegate {
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
-        
-        FIRDatabase.database().reference().child("SpecRequests").observe(.childAdded) { (snapshot) in
-            if let specRequestDict = snapshot.value as? [String: Any] {
-                if let _ = specRequestDict["specLat"] as? Double {
-                } else {
-                    self.specRequests.append(snapshot)
-                    self.tableView.reloadData()
-                }
-            }
-        }
+
 //        FIRDatabase.database().reference().child("SpecRequests").observeSingleEvent(of: .childAdded) { (snapshot) in
 //            if let specRequestDict = snapshot.value as? [String: Any] {
 //                if let _ = specRequestDict["specLat"] as? Double {
@@ -43,6 +33,19 @@ class SpecViewController: UITableViewController, CLLocationManagerDelegate {
 //                }
 //            }
 //        }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        specRequests = []
+        FIRDatabase.database().reference().child("SpecRequests").observe(.childAdded) { (snapshot) in
+            if let specRequestDict = snapshot.value as? [String: Any] {
+                if let _ = specRequestDict["specLat"] as? Double {
+                } else {
+                    self.specRequests.append(snapshot)
+                    self.tableView.reloadData()
+                }
+            }
+        }
         
         Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { (timer) in
             self.tableView.reloadData()
@@ -58,12 +61,6 @@ class SpecViewController: UITableViewController, CLLocationManagerDelegate {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return specRequests.count
-    }
-    
-    
-    @IBAction func logoutTapped(_ sender: Any) {
-        try? FIRAuth.auth()?.signOut()
-        navigationController?.dismiss(animated: true, completion: nil)
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -85,6 +82,11 @@ class SpecViewController: UITableViewController, CLLocationManagerDelegate {
         }
 
         return cell
+    }
+    
+    
+    @IBAction func backTapped(_ sender: Any) {
+        navigationController?.dismiss(animated: true, completion: nil)
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

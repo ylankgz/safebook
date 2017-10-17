@@ -1,5 +1,9 @@
 
-"Kqi-Bh-rtZ.text" = "Привет";
+"KFZ-Wy-xjK.normalTitle" = "Начать";
+"PFO-NX-LFk.text" = "или";
+"x4s-79-VW1.normalTitle" = "Войти как специалист";
+"tmN-gT-WWk.normalTitle" = "Назад";
+"3Pr-6u-O7b.title" = "Выйти";
 "xTF-yL-0Ks.placeholder" = "Ваше имя";
 "OPX-4u-tH9.placeholder" = "Ваш е-мэйл";
 "0Fe-cv-xzX.placeholder" = "Пароль";
@@ -88,9 +92,6 @@
 
 /* Class = "UITableViewSection"; headerTitle = "Cache"; ObjectID = "oJf-E7-Vh6"; */
 "oJf-E7-Vh6.headerTitle" = "Cache";
-
-/* Class = "UILabel"; text = "keinex.com"; ObjectID = "uVm-ql-Vzf"; */
-"uVm-ql-Vzf.text" = "keinex.com";
 
 /* Class = "UITextField"; placeholder = "Enter your email"; ObjectID = "xsc-ID-agk"; */
 "xsc-ID-agk.placeholder" = "Enter your email";

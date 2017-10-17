@@ -13,6 +13,7 @@ import MapKit
 
 class AcceptViewController: UIViewController {
     
+    @IBOutlet weak var acceptButton: UIButton!
     @IBOutlet weak var map: MKMapView!
     var requestLocation = CLLocationCoordinate2D()
     var specLocation = CLLocationCoordinate2D()
@@ -30,6 +31,8 @@ class AcceptViewController: UIViewController {
     
     @IBAction func acceptTapped(_ sender: Any) {
         // Update the request
+        acceptButton.setTitle("Accepted".localize, for: .normal)
+        acceptButton.setBackgroundImage(#imageLiteral(resourceName: "Cancel"), for: .normal)
         FIRDatabase.database().reference().child("SpecRequests").queryOrdered(byChild: "email").queryEqual(toValue: requestEmail).observe(.childAdded) { (snapshot) in
             snapshot.ref.updateChildValues(["specLat": self.specLocation.latitude, "specLon": self.specLocation.longitude])
             FIRDatabase.database().reference().child("SpecRequests").removeAllObservers()
