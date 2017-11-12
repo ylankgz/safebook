@@ -6,12 +6,12 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "BG.png",
+      "filename" : "Background map.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "BG3.png",
+      "filename" : "Background map3.png",
       "scale" : "3x"
     }
   ],

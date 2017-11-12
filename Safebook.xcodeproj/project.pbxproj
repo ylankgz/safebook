@@ -15,6 +15,7 @@
 		F31C95C41F5F2A0C00EF0BC0 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F31C95C31F5F2A0B00EF0BC0 /* .gitignore */; };
 		F33163991F80EE4A008795B5 /* SpecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33163981F80EE4A008795B5 /* SpecViewController.swift */; };
 		F331639B1F8143D3008795B5 /* AcceptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F331639A1F8143D3008795B5 /* AcceptViewController.swift */; };
+		F333D94D1FB869A8004FEAAF /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F333D94C1FB869A8004FEAAF /* EventViewController.swift */; };
 		F3397CBF1F94B7F700122CE8 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3397CBE1F94B7F700122CE8 /* StartViewController.swift */; };
 		F36251911F8E327400082C41 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F36251901F8E327400082C41 /* GoogleService-Info.plist */; };
 		F3708B0D1F7E1C0D002B66A7 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3708B0C1F7E1C0D002B66A7 /* SignupVC.swift */; };
@@ -37,6 +38,7 @@
 		F3A633BE1F52EE1E0042DA3E /* NewsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A633BD1F52EE1E0042DA3E /* NewsListTableViewCell.swift */; };
 		F3A633C01F52EF5A0042DA3E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F3A633BF1F52EF5A0042DA3E /* Podfile */; };
 		F3A633CC1F52F3A60042DA3E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3A633CE1F52F3A60042DA3E /* Localizable.strings */; };
+		F3BC9D361FB757DE0020F8E6 /* OrgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BC9D351FB757DE0020F8E6 /* OrgViewController.swift */; };
 		F3CDF3431F7FF97E00432800 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CDF3421F7FF97E00432800 /* UserViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +70,8 @@
 		F31C95C31F5F2A0B00EF0BC0 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		F33163981F80EE4A008795B5 /* SpecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecViewController.swift; sourceTree = "<group>"; };
 		F331639A1F8143D3008795B5 /* AcceptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptViewController.swift; sourceTree = "<group>"; };
+		F333D94C1FB869A8004FEAAF /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		F333D94F1FB87E19004FEAAF /* KDCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KDCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3397CBE1F94B7F700122CE8 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		F36251901F8E327400082C41 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F3708B0C1F7E1C0D002B66A7 /* SignupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
@@ -98,6 +102,7 @@
 		F3A633BF1F52EF5A0042DA3E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F3A633CD1F52F3A60042DA3E /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F3A633CF1F52F3AF0042DA3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F3BC9D351FB757DE0020F8E6 /* OrgViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgViewController.swift; sourceTree = "<group>"; };
 		F3CDF3421F7FF97E00432800 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		F3E48C341F86E9160053D606 /* Safebook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Safebook.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +145,7 @@
 		8C1668D5DD6EC5AA699FF046 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F333D94F1FB87E19004FEAAF /* KDCalendar.framework */,
 				B4B13EE46047427B2EBBB497 /* Pods_Safebook.framework */,
 			);
 			name = Frameworks;
@@ -159,8 +165,17 @@
 				F3CDF3421F7FF97E00432800 /* UserViewController.swift */,
 				F33163981F80EE4A008795B5 /* SpecViewController.swift */,
 				F331639A1F8143D3008795B5 /* AcceptViewController.swift */,
+				F3BC9D351FB757DE0020F8E6 /* OrgViewController.swift */,
 			);
 			name = Map;
+			sourceTree = "<group>";
+		};
+		F333D94B1FB8697D004FEAAF /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				F333D94C1FB869A8004FEAAF /* EventViewController.swift */,
+			);
+			name = Event;
 			sourceTree = "<group>";
 		};
 		F3708B0E1F7E444E002B66A7 /* Signup */ = {
@@ -262,6 +277,7 @@
 		F3A633AD1F52EC920042DA3E /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				F333D94B1FB8697D004FEAAF /* Event */,
 				F3A633751F52EA160042DA3E /* LaunchScreen.storyboard */,
 				F3A633701F52EA160042DA3E /* Main.storyboard */,
 				F3A633BA1F52EDC80042DA3E /* Cases */,
@@ -473,9 +489,20 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Safebook/Pods-Safebook-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -488,13 +515,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Safebook-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F38380A1FD8AEC4E96FB7A80 /* [CP] Copy Pods Resources */ = {
@@ -520,6 +550,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3A633B71F52ED790042DA3E /* ArticleCommentsTableViewCell.swift in Sources */,
+				F3BC9D361FB757DE0020F8E6 /* OrgViewController.swift in Sources */,
+				F333D94D1FB869A8004FEAAF /* EventViewController.swift in Sources */,
 				F3CDF3431F7FF97E00432800 /* UserViewController.swift in Sources */,
 				F331639B1F8143D3008795B5 /* AcceptViewController.swift in Sources */,
 				F306C7401F8CB4C400C4AFF9 /* DocsViewController.swift in Sources */,

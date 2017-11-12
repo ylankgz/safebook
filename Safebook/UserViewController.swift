@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import MapKit
 import FirebaseDatabase
 import FirebaseAuth
 import MapKit

@@ -23,6 +23,9 @@ class StartViewController: UIViewController {
         self.performSegue(withIdentifier: "specSegue", sender: nil)
     }
     
+    @IBAction func goBack(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return UIInterfaceOrientationMask.all //return the value as per the required orientation
     }

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,20 +22,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="zEN-fx-ibW" userLabel="Background">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="WJv-RB-dO9">
-                                <rect key="frame" x="125" y="95" width="125" height="116"/>
+                                <rect key="frame" x="125" y="275.5" width="125" height="116"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.29150390625" green="0.20366753472222221" blue="0.52685546875" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="WJv-RB-dO9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="0ZI-Ft-hp7"/>
-                            <constraint firstAttribute="trailing" secondItem="zEN-fx-ibW" secondAttribute="trailing" constant="-39" id="7ep-FB-wUS"/>
-                            <constraint firstItem="zEN-fx-ibW" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="P4L-Fr-wyl"/>
-                            <constraint firstItem="zEN-fx-ibW" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Y6R-Eu-Ls9"/>
-                            <constraint firstAttribute="bottom" secondItem="zEN-fx-ibW" secondAttribute="bottom" constant="-69" id="dHp-cC-fwP"/>
-                            <constraint firstItem="WJv-RB-dO9" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="75" id="gL2-7D-4j5"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="zEN-fx-ibW" secondAttribute="bottom" id="91A-19-eKs"/>
+                            <constraint firstItem="zEN-fx-ibW" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Bx3-Xq-ANc"/>
+                            <constraint firstItem="WJv-RB-dO9" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Qti-26-YHQ"/>
+                            <constraint firstItem="zEN-fx-ibW" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="eBa-0o-GbD"/>
+                            <constraint firstItem="WJv-RB-dO9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="gbZ-n5-4sq"/>
+                            <constraint firstAttribute="trailing" secondItem="zEN-fx-ibW" secondAttribute="trailing" id="kye-0C-yJ6"/>
                         </constraints>
                     </view>
                 </viewController>
