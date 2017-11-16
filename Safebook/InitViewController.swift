@@ -16,9 +16,13 @@ class InitViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        UIApplication.shared.isStatusBarHidden = true
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        UIApplication.shared.isStatusBarHidden = true
         AppUtility.lockOrientation(.portrait)
         // Or to rotate and lock
         // AppUtility.lockOrientation(.portrait, andRotateTo: .portrait)

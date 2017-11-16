@@ -145,15 +145,19 @@ class SettingsViewController: UITableViewController, MFMailComposeViewController
             self.present(alert, animated: true, completion: nil)
         
         } else if ((indexPath as NSIndexPath).section == 2 && (indexPath as NSIndexPath).row == 0) {
-            if let deviceInfo = generateDeviceInfo().data(using: String.Encoding.utf8,allowLossyConversion: false) {
+            if let deviceInfo = generateDeviceInfo().data(using: String.Encoding.utf8, allowLossyConversion: false) {
                 let mc = MFMailComposeViewController()
-                mc.mailComposeDelegate = self
-                mc.navigationBar.tintColor = UIColor.mainColor()
-                mc.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.mainColor()]
-                mc.setToRecipients(["kgopenline@gmail.com"])
-                mc.setSubject("Safebook app")
-                mc.addAttachmentData(deviceInfo, mimeType: "text/plain", fileName: "device_information.txt")
-                self.present(mc, animated: true, completion: nil)
+                if MFMailComposeViewController.canSendMail() {
+                    mc.mailComposeDelegate = self
+                    mc.navigationBar.tintColor = UIColor.mainColor()
+                    mc.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.mainColor()]
+                    mc.setToRecipients(["kgopenline@gmail.com"])
+                    mc.setSubject("Safebook app")
+                    mc.addAttachmentData(deviceInfo, mimeType: "text/plain", fileName: "device_information.txt")
+                    
+                    self.present(mc, animated: true, completion: nil)
+                }
+                
             }
             
         } else if ((indexPath as NSIndexPath).section == 2 && (indexPath as NSIndexPath).row == 1) {
