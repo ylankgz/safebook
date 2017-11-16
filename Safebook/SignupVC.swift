@@ -14,10 +14,6 @@ class SignupVC: UIViewController {
         super.viewDidLoad()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-    }
-    
-    
     @IBAction func loginTapped(_ sender: Any) {
         if signupMode {
             signupButton.setTitle("Login".localize, for: .normal)
@@ -78,12 +74,20 @@ class SignupVC: UIViewController {
     @IBAction func backTapped(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return UIInterfaceOrientationMask.all //return the value as per the required orientation
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        AppUtility.lockOrientation(.portrait)
+        // Or to rotate and lock
+        // AppUtility.lockOrientation(.portrait, andRotateTo: .portrait)
+        
     }
     
-    override var shouldAutorotate: Bool {
-        return false
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        // Don't forget to reset when view is being removed
+        AppUtility.lockOrientation(.all)
     }
 }
 

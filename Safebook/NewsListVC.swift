@@ -152,18 +152,18 @@ class LatestNewsTableViewController: UITableViewController {
         
         cell.postDate!.text = desc
         
-        guard let image = self.json[index]["better_featured_image"]["source_url"].string, image != "null" else {
-            print("Image didn't load")
-            return
-        }
-        
-        ImageLoader.sharedLoader.imageForUrl(urlString: image) { [weak self] image, url in
-            if self != nil {
-                DispatchQueue.main.async(execute: { () -> Void in
-                    cell.postImage.image = image
-                })
-            }
-        }
+//        guard let image = self.json[index]["better_featured_image"]["source_url"].string, image != "null" else {
+//            print("Image didn't load")
+//            return
+//        }
+//        
+//        ImageLoader.sharedLoader.imageForUrl(urlString: image) { [weak self] image, url in
+//            if self != nil {
+//                DispatchQueue.main.async(execute: { () -> Void in
+//                    cell.postImage.image = image
+//                })
+//            }
+//        }
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
